@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML</title>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Website Header</h1>
+    <p>This is the header section. It usually contains the website's logo, title, and main navigation menu.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>Navigation Menu</h2>
+    <p>The navigation section provides links to different parts of the website.</p>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Main Content Area</h2>
+    <p>This is the main section of the page, which holds the most important content visible to users.</p>
+
+    <!-- Article -->
+    <article>
+      <h3>Article Section</h3>
+      <p>An article contains self-contained content that can stand on its own, like a blog post or news item.</p>
+    </article>
+
+    <!-- Section -->
+    <section id="about">
+      <h3>About Us Section</h3>
+      <p>This section describes the purpose of the website or the organization behind it.</p>
+    </section>
+
+    <!-- Aside -->
+    <aside>
+      <h3>Sidebar Section</h3>
+      <p>The aside section contains related content, such as links, ads, or additional information.</p>
+    </aside>
+  </main>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>This section highlights the services or products offered by the business or website.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Fill out the form below to get in touch with us.</p>
+
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="e.g. 0712345678" required>
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select Gender--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Website Footer</h2>
+    <p>The footer contains copyright information, links to policies, and contact details.</p>
+  </footer>
+
+</body>
+</html>
